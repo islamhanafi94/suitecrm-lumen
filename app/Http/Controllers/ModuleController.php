@@ -77,24 +77,6 @@ class ModuleController extends Controller
     }
 
     public function auth(){
-        // $url = 'localhost/test_api/Api/access_token';
-        // $client = new Client();
-        // $response = $client->request(
-        //     'POST',
-        //     $url,
-        //     array(
-        //         'json' =>array(
-        //             "grant_type" => "password",
-        //             "client_id" => "114b7030-489f-5f8e-6a03-5f6a719650a0",
-        //             "client_secret" => "client2",
-        //             "username" => "admin",
-        //             "password" => "admin"    
-        //         )
-        //     )
-        // );
-
-        // return json_decode($response->getBody())->access_token;
-
         $url = 'localhost/test_api/Api/access_token';
         $curl = new Curl();
         $data = array(
